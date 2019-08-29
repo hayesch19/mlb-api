@@ -21,7 +21,11 @@ const About = () => {
         <h3>About The MLB</h3>
         <section>
           {aboutMLB.map((league, unicorn) => {
-            return <p key={unicorn}>{league.strLeagueAlternate}</p>
+            return (
+              <p key={unicorn}>
+                <u>{league.strLeagueAlternate}</u>
+              </p>
+            )
           })}
           {aboutMLB.map((league, unicorn) => {
             return <p key={unicorn}>Founded in {league.intFormedYear}</p>

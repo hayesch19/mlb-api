@@ -5,6 +5,7 @@ import Header from './components/Header'
 import HomePage from './components/HomePage'
 import PreviousGames from './components/PreviousGames'
 import About from './components/About'
+import Footer from './components/Footer'
 
 class App extends Component {
   render() {
@@ -30,6 +31,7 @@ class App extends Component {
           <Route exact path="/about" component={About}></Route>
           <Route exact path="/pastgames" component={PreviousGames}></Route>
         </Switch>
+        <Footer />
       </Router>
     )
   }

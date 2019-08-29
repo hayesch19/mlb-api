@@ -22,7 +22,7 @@ const HomePage = () => {
         {nextGame.map((event, i) => {
           return (
             <p key={i}>
-              {event.dateEvent} @ {event.strTime} | {event.strEvent}
+              {event.dateEvent} @ {event.strTime} | <u>{event.strEvent}</u>
             </p>
           )
         })}
