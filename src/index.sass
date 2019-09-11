@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap')
 $primary-color: #0317cc
-$mlb-red: #bb1a23
+$mlb-red: #E52027
+$mlb-blue: #09143F
 $font-stack: 'Varela Round', sans-serif
 
 %game-info
@@ -13,6 +14,9 @@ $font-stack: 'Varela Round', sans-serif
   display: flex
   justify-content: center
 
+%blue-border
+  border: .3rem solid $mlb-blue
+
 .root
   font: 16px / 1 sans-serif
 
@@ -20,7 +24,7 @@ html
   height: 100%
 
 body
-  color: $primary-color
+  color: $mlb-blue
   font: 100% $font-stack
   margin: 0
   min-height: 100%
@@ -36,16 +40,19 @@ header
 
 nav
   @extend %centering-content
+  @extend %blue-border
   background-color: $mlb-red
   font-size: 1.3rem
 
 a
-  color: $primary-color
+  color: $mlb-blue
   padding-left: 2rem
   padding-right: 2rem
 
 footer
   text-align: center
+  background-color: $mlb-red
+  padding: .01rem
 
 /***** Classes *****/
 
@@ -61,6 +68,6 @@ footer
 
 .about-mlb-area
   font-size: 1rem
-  padding: 4rem
+  padding: 7rem
   height: auto
   text-align: center
