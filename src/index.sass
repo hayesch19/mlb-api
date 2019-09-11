@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap')
+$primary-color: #0317cc
+$mlb-red: #bb1a23
+$font-stack: 'Varela Round', sans-serif
+
+%game-info
+  font-size: 1rem
+  padding: 1rem
+  height: auto
+  padding-left: 2.5rem
+
+%centering-content
+  display: flex
+  justify-content: center
+
+.root
+  font: 16px / 1 sans-serif
+
+html
+  height: 100%
+
+body
+  color: $primary-color
+  font: 100% $font-stack
+  margin: 0
+  min-height: 100%
+  background-image: url('./images/baseball-field-grass.jpg')
+  background-repeat: no-repeat
+  backdrop-filter: blur(5px)
+
+header
+  @extend %centering-content
+  background-image: url('./images/fenway.jpg')
+  background-size: cover
+  padding: 1.5rem
+
+nav
+  @extend %centering-content
+  background-color: $mlb-red
+  font-size: 1.3rem
+
+a
+  color: $primary-color
+  padding-left: 2rem
+  padding-right: 2rem
+
+footer
+  text-align: center
+
+/***** Classes *****/
+
+.header-img
+  width: 40%
+  height: auto
+
+.upcoming-games-area
+  @extend %game-info
+
+.past-games-area
+  @extend %game-info
+
+.about-mlb-area
+  font-size: 1rem
+  padding: 4rem
+  height: auto
+  text-align: center

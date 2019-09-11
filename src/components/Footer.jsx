@@ -4,8 +4,8 @@ const Footer = () => {
   return (
     <footer>
       <h5>
-        © 2019 <span class="pro">Chris Hayes</span> . All rights reserved. Made
-        with &#10084;&#65039; in St. Petersburg, Florida
+        © 2019 <span className="pro">Chris Hayes</span> . All rights reserved.
+        Made with &#10084;&#65039; in St. Petersburg, Florida
       </h5>
     </footer>
   )
